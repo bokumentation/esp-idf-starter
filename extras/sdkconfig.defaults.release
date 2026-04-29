@@ -1,0 +1,18 @@
+# Release Build Profile
+# Override base defaults for release builds
+#
+# Usage: idf.py -DSDKCONFIG_DEFAULTS=sdkconfig.defaults.release build
+
+# Logging - Minimal (only errors)
+CONFIG_LOG_DEFAULT_LEVEL_ERROR=y
+CONFIG_LOG_DEFAULT_LEVEL=1
+CONFIG_LOG_COLORS=n
+
+# Assertions - Disabled for size/speed
+CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_DISABLE=y
+
+# Compiler - Optimize for size
+CONFIG_COMPILER_OPTIMIZATION_SIZE=y
+
+# Stack checking - Minimal
+# CONFIG_FREERTOS_CHECK_STACKOVERFLOW is not set

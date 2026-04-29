@@ -1,0 +1,20 @@
+# Debug Build Profile
+# Override base defaults for debug builds
+#
+# Usage: idf.py -DSDKCONFIG_DEFAULTS=sdkconfig.defaults.debug build
+
+# Logging - Verbose
+CONFIG_LOG_DEFAULT_LEVEL_VERBOSE=y
+CONFIG_LOG_DEFAULT_LEVEL=5
+CONFIG_LOG_COLORS=y
+
+# Assertions
+CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_ENABLE=y
+CONFIG_OPTIMIZATION_ASSERTIONS_ENABLED=y
+
+# Compiler - No optimization for easier debugging
+CONFIG_COMPILER_OPTIMIZATION_DEBUG=y
+
+# Stack checking
+CONFIG_FREERTOS_CHECK_STACKOVERFLOW=y
+CONFIG_FREERTOS_WATCHPOINT_END_OF_STACK=y
