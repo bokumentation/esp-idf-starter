@@ -5,9 +5,9 @@
                 "path": "C:/bin/clang_22/bin/clangd.exe",
                 "arguments": [
                     "--query-driver=C:/Espressif/tools/xtensa-esp-elf/**/*",
-                    "--query-driver=C:/Espressif/tools/riscv32-esp-elf/**/*",
-                ],
-            },
-        },
-    },
+                    "--query-driver=C:/Espressif/tools/riscv32-esp-elf/**/*"
+                ]
+            }
+        }
+    }
 }
